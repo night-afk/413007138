@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>過往經歷</title>
+	<link rel="icon" href="014.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body{
+			font-family: 'Yuji Syuku';
+			background-color: #FCFAF2;
+		}
+		header{
+			text-align:center; 
+		}
+		.box1 {
+		  margin: 0;
+		  padding: 0.3rem;
+		  background-color: #eee;
+		  width: 80%;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+		.box1 > h1,.box2 {
+		  margin: 0.5rem;
+		  padding: 0.3rem;
+		  font-size: 1.2rem;
+		}
+		.box2 {
+		  background: right/contain content-box border-box no-repeat white;
+		}
+		.box2 > h2, .box2 > p {
+		  margin: 0.2rem;
+		  font-size: 1rem;
+		}
+		h2{
+			text-align: center;
+		}
+		.nlist{
+			list-style: none;
+			line-height: 2;
+		}
+		table{
+			border-collapse: collapse;
+			border-style: hidden;
+		    overflow: hidden;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		caption {
+		  caption-side: top;
+		  text-align: center;
+		  font-weight: bold;
+		  color: #656765;
+		}
+		footer a{
+			text-decoration: none;
+		}
+		footer{
+			text-align: center;
+		}
+		dl{
+			font-size: 15px;
+		}
+		dt{
+			font-style: italic;
+		}
+		/*進度條*/
+		progress{
+		    position: relative;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    border: 1px solid #eee; /* 邊框樣式 */
+		    border-radius:20px;   /* 圓角 */
+		    overflow: hidden;     /* 超過範圍隱藏 */
+		    height:10px;          /* 高度 */
+		    vertical-align: middle; /* 垂直置中 */
+
+		}
+		::-webkit-progress-value {
+			background-color: #656765;
+		}
+		::-moz-progress-value {
+			background-color:#656765;
+		}
+		::-webkit-progress-bar {
+		    background-color: #aaa;
+		  }
+		::-moz-progress-bar {
+			background-color: #aaa;
+		}
+	</style>
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200..900&family=Noto+Serif+TC:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>學習成長歷程</h1>
+		<p>紀錄生活中的點點滴滴<img src="img/041.png" width="15px"></p>
+		<nav id="nav1">
+			<ul class="flex">
+				<li><a href="index.html"  target="_blank">回首頁</a></li>
+				<li><a href="timetable.html" target="_blank">我的課表</a></li>
+				<li><a href="exp.html">過往經歷</a></li>
+				<li><a href="lyrics.html" target="_blank">一首歌</a></li>
+				<li><a href="natsume.html" target="_blank">喜歡的動漫</a></li>
+				<li><a href="grid.html" target="_blank">css grid上課範例</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<article class="box1" id="content">
+		<h2>過往經歷</h2>
+		<article class="box2">
+		    <div class="grid-box">
+		    	<div class="department">
+		    	1. 學校科系
+		    		<ul>
+		    			<li>文藻外語大學-五專部日文科</li>
+		    			<li>淡江大學-資訊與圖書館學系</li>
+		    		</ul>
+		    	</div>
+		    	<div class="practice">
+		    	2. 實習經驗
+		    		<ul>
+		    			<li>高雄市立美術館-春季實習生(1學期)</li>
+		    		</ul>
+		    	</div>
+		    	<div class="outside">
+		    	3. 課外活動
+		    		<ul>
+		    			<li>音樂遊戲研究社-文書(文藻)</li>
+		    			<li>關懷動物社-社員</li>
+		    		</ul>
+		    	</div>
+		    	<div class="skill">
+		    	4. 技能培養
+		    		<ul>
+		    			<!--英文-->
+		    			<li>
+		    				<label for="en">英文</label>
+		    			</li>
+		    			<div><progress value="70" max="100" id="en"></progress>--70%</div>
+		    			<!--日文-->
+		    			<li>
+		    				<label for="jp">日文</label>		    				
+		    			</li>
+		    			<div><progress value="80" max="100" id="jp"></progress>--80%</div>
+		    			<!--Python-->
+		    			<li>
+		    				<label for="py">Python</label>		    				
+		    			</li>
+		    			<div><progress value="50" max="100" id="py"></progress>--50%</div>
+		    			<!--HTML, CSS-->
+		    			<li>
+		    				<label for="html">HTML, CSS</label>		    				
+		    			</li>
+		    			<div><progress value="50" max="100" id="html"></progress>--學習中</div>
+		    			<!--PHP-->
+		    			<li>
+		    				<label for="html">PHP</label>		    				
+		    			</li>
+		    			<div><progress value="50" max="100" id="html"></progress>--學習中</div>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <p>使用grid排版</p>
+		</article>
+	</article>
+	<footer>
+		<p><a href="#top">▲回到本頁開頭</a></p>
+		<p><small>&copy; Copyright 2025 本網站僅為作業之用，如有侵權敬請告知</small></p>
+	</footer>
+</body>
+</html>

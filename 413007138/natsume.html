@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>喜歡的動畫</title>
+	<link rel="icon" href="in.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.box1 {
+		  margin: 0;
+		  padding: 0.3rem;
+		  background-color: #eee;
+		  width: 80%;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+		.box1 > h1,.box2 {
+		  margin: 0.5rem;
+		  padding: 0.3rem;
+		  font-size: 1.2rem;
+		}
+		.box2 {
+		  background: right/contain content-box border-box no-repeat white;
+		}
+		.box2 > h2, .box2 > p {
+		  margin: 0.2rem;
+		  font-size: 1rem;
+		}
+		h2{
+			text-align: center;
+		}
+		.nlist{
+			list-style: none;
+			line-height: 2;
+		}
+		table{
+			border-collapse: collapse;
+			border-style: hidden;
+		    overflow: hidden;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		caption {
+		  caption-side: top;
+		  text-align: center;
+		  font-weight: bold;
+		  color: #656765;
+		}
+		footer a{
+			text-decoration: none;
+		}
+		footer{
+			text-align: center;
+		}
+		dl{
+			font-size: 15px;
+		}
+		dt{
+			font-style: italic;
+		}
+		/*網站地圖 超連結樣式設置*/
+		a{
+			/*文字顏色*/
+			color: #986DB2;
+			/*裝飾: 類型 樣式 顏色 粗細*/
+			text-decoration: underline dotted #70649A 2px;
+		}
+		a:hover{
+		/* 滑鼠移到文字時的樣式: 文字顏色 背景顏色 内邊距 圓角*/
+			color: #211E55;
+			background-color: rgba(152,109,178,0.5);
+			/*上 右 下 左*/
+			padding: 1px 5px 1px 5px;
+			border-radius: 10px;
+			/*取消文字裝飾*/
+			text-decoration: none;
+		}
+		/* 自我介紹 div區塊 */
+		#intro{
+			display: flex;
+			justify-content: center;
+			padding: 0;
+			margin: 10px;
+		}
+		#d1{
+			margin: 30px 10px;
+			padding: 10px;
+		}
+		#d2{
+			margin: 30px 10px;
+			padding: 10px 40px 10px 40px;
+			line-height: 2;
+			/*文字外觀*/
+			color: #52433D;
+			background-color: rgba(238,238,238,0.5);
+			border-radius: 20px;
+		}
+		.intro-content{
+			text-decoration: underline solid rgba(215,185,142,0.7) 5px;
+			text-underline-offset: -0.2em;
+			text-decoration-skip-ink: none;
+		}
+		body{
+			text-align: center;
+		}
+		.flex2 ol{
+			list-style: none; /*移除項目符號*/
+			padding: 0;
+			margin: 0;
+		}
+		.flex2{
+			display: flex;
+			justify-content: space-evenly;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			list-style: none;
+		}
+		
+		.flex2 img{
+			height: 200px;
+			max-height: 100%; /* 寬度以100%呈現，隨著螢幕尺寸縮放*/
+			width: auto; /* 高度隨著螢幕尺寸自動縮放*/
+		}
+		.flex2 a{
+			text-decoration: none; /*移除超連結底線*/
+		}
+
+	</style>
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200..900&family=Noto+Serif+TC:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>學習成長歷程</h1>
+		<p>紀錄生活中的點點滴滴<img src="img/041.png" width="15px"></p>
+		<!-- 導覽列 -->
+		<nav id="nav1">
+			<ul class="flex">
+				<li><a href="index.html">首頁</a></li>
+				<li><a href="timetable.html" target="_blank">我的課表</a></li>
+				<li><a href="exp.html" target="_blank">過往經歷</a></li>
+				<li><a href="lyrics.html" target="_blank">一首歌</a></li>
+				<li><a href="natsume.html" target="_blank">喜歡的動漫</a></li>
+				<li><a href="grid.html" target="_blank">css grid上課範例</a></li>
+				<li><small> 本區塊使用nav Tag製作導覽列</small></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<div>
+		<p>
+			<font color="#904840">
+				<h3>心優しき友人たちとの、大切な日々──</h3>
+				<h3>美しく儚き、人と妖の物語。</h3>
+			</font>
+		</p>
+		<hr>
+		<p>
+			<h2>夏目友人帳動畫15周年紀念PV</h2>
+			<iframe width="800" height="450" src="https://www.youtube.com/embed/UVt6Dc1otME?si=70moUV7EGaBhYLZR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</p>
+	</div>
+	<div>
+		<h3>作品簡介</h3>
+		<p>
+			從小就能看見妖怪的少年、夏目貴志。 <br>
+			自從得到祖母鈴子留下的遺物「友人帳」後，<br>
+			他就和自稱保鑣的貓咪老師，<br>
+			一起展開將名字還給妖怪們的生活。 <br>
+		</p>
+		<p>
+			通過與妖怪、還有跟妖怪有關的人們的相處，<br>
+			夏目也開始摸索自己應該前進的道路，<br>
+			一邊得到可以互相分享想法的朋友的幫助，<br>
+			一邊尋找可以守護珍貴日子的方法。<br>
+		</p>
+		<p>
+			小さい頃から妖怪を見ることができた少年・夏目貴志は、<br>
+			祖母レイコの遺産「友人帳」を受け継ぎ、<br>
+			自称用心棒のニャンコ先生と共に、<br>
+			そこに名を縛られた妖怪たちに名を返す日々を送る。<br>
+		</p>
+		<p>
+			妖と、そこに関わる人との触れ合いを通して、<br>
+			自分の進むべき道を模索し始めた夏目は、<br>
+			想いを共有できる友人たちにも助けられながら、<br>
+			大切な日々を守るすべを見つけていこうとする。<br>
+		</p>
+		<h2>動畫</h2>
+		<ol class="flex2">
+			<li><a href="https://www.natsume-anime.jp/introduction/series7" target="_blank">第七季</a><br><a href="https://www.natsume-anime.jp/introduction/series7" target="_blank"><img src="ani/7th.jpg"></a></li>
+			<li><a href="https://www.natsume-anime.jp/introduction/series6" target="_blank">第六季</a><br><a href="https://www.natsume-anime.jp/introduction/series6" target="_blank"><img src="ani/6th.jpg" ></a></li>
+			<li><a href="https://www.natsume-anime.jp/introduction/series5" target="_blank">第五季</a><br><a href="https://www.natsume-anime.jp/introduction/series5" target="_blank"><img src="ani/5th.jpg"></a></li>
+			<li><a href="https://www.natsume-anime.jp/introduction/series4" target="_blank">第四季</a><br><a href="https://www.natsume-anime.jp/introduction/series4" target="_blank"><img src="ani/4th.jpg"></a></li>
+		</ol>
+		<ol class="flex2">
+			<li><a href="https://www.natsume-anime.jp/introduction/series3" target="_blank">第三季</a><br><a href="https://www.natsume-anime.jp/introduction/series3" target="_blank"><img src="ani/3th.jpg"></a></li>
+			<li><a href="https://www.natsume-anime.jp/introduction/series2" target="_blank">第二季</a><br><a href="https://www.natsume-anime.jp/introduction/series2" target="_blank"><img src="ani/2th.jpg" ></a></li>
+			<li><a href="https://www.natsume-anime.jp/introduction/series1" target="_blank">第一季</a><br><a href="https://www.natsume-anime.jp/introduction/series1" target="_blank"><img src="ani/1th.jpg"></a></li>
+		</ol>
+	</div>
+	<div>
+		<h2>電影</h2>
+		<ol class="flex2">
+			<li><a href="https://www.natsume-anime.jp/introduction/movie-utusemi">劇場版 夏目友人帳 ～うつせみに結ぶ～</a><br><a href="https://www.natsume-anime.jp/introduction/movie-utusemi"><img src="ani/m2.jpg"></a></li>
+			<li><a href="https://www.natsume-anime.jp/introduction/ova-isiokoshi">夏目友人帳 石起こしと怪しき来訪者</a><br><a href="https://www.natsume-anime.jp/introduction/ova-isiokoshi"><img src="ani/m1.jpg" ></a></li>
+			<li><a href="https://www.natsume-anime.jp/introduction/ova-ituka">夏目友人帳 いつかゆきのひに</a><br><a href="https://www.natsume-anime.jp/introduction/ova-ituka"><img src="ani/m3.jpg"></a></li>
+		</ol>
+	</div>
+	<footer>
+		<p><a href="#top">▲回到本頁開頭</a></p>
+		<p><small>&copy; Copyright 2025 本網站僅為作業之用，如有侵權敬請告知</small></p>
+	</footer>
+</body>
+</html>

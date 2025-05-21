@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>一首歌</title>
+	<link rel="icon" href="music.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body{
+			font-family: 'Yuji Syuku';
+			background-color: #FCFAF2;
+		}
+		header{
+			text-align:center; 
+		}
+		.box1 {
+		  margin: 0;
+		  padding: 0.3rem;
+		  background-color: #eee;
+		  width: 80%;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+		.box1 > h1,.box2 {
+		  margin: 0.5rem;
+		  padding: 0.3rem;
+		  font-size: 1.2rem;
+		}
+		.box2 {
+		  background: right/contain content-box border-box no-repeat white;
+		  padding: 20px;
+		}
+		.box2 > h2, .box2 > p {
+		  margin: 0.2rem;
+		  font-size: 1rem;
+		}
+		h2{
+			text-align: center;
+		}
+		.nlist{
+			list-style: none;
+			line-height: 2;
+		}
+		table{
+			table-layout: auto;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			/*表格邊框: 合併*/
+			border-collapse: collapse; 
+		}
+		th{
+			padding: 5px;
+			font-size: 25px;
+			color: #434343;
+		}
+		td{
+			border: 3px solid #656765;
+			text-align: center;
+			width: 200px;
+			height: 50px;
+			padding: 3px;
+		}
+		.num{
+			border-right: hidden;
+		}
+		#cap2 {
+		  caption-side: top;
+		  text-align: center;
+		  font-weight: bold;
+		  color: #656765;
+		  font-size: 25px;
+		}
+		footer a{
+			text-decoration: none;
+		}
+		footer{
+			text-align: center;
+		}
+		small{
+			text-align: center;
+		}
+		/*歌詞樣式配置*/
+		#song-title{
+			font-family: 'Noto Serif TC';
+		}
+		.info-style{
+			/*div水平並排，平均分布*/
+			display: flex;
+			justify-content: space-around;
+			/*字型 */
+			font-family: 'Noto Serif TC';
+		}
+		/*詞曲*/
+		.name{
+			/*靠下對齊*/
+			margin-top: auto;
+		}
+		/*歌詞部分*/
+		.lyrics-style{
+			font-family: 'Noto Serif TC';
+			padding-left: 20px;
+			line-height: 1.5;
+		}
+	</style>
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200..900&family=Noto+Serif+TC:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200..900&family=Noto+Serif+TC:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>學習成長歷程</h1>
+		<p>紀錄生活中的點點滴滴<img src="img/041.png" width="15px"></p>
+		<nav id="nav1">
+			<ul class="flex">
+				<li><a href="index.html"  target="_blank">回首頁</a></li>
+				<li><a href="timetable.html">我的課表</a></li>
+				<li><a href="exp.html" target="_blank">過往經歷</a></li>
+				<li><a href="lyrics.html">一首歌</a></li>
+				<li><a href="natsume.html" target="_blank">喜歡的動漫</a></li>
+				<li><a href="grid.html" target="_blank">css grid上課範例</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<article class="box1" id="content">
+		<h2 id="song-title">Crispy脆樂團 〈年少的我們永遠輕狂〉</h2>
+		<div class="info-style">
+			<div class="name">
+				<p>
+					詞：盧羿安 Skippy / 丁律妏 Christine Ting<br>
+					曲：丁律妏 Christine Ting / 盧羿安 Skippy
+				</p>
+			</div>
+			<div>
+				<img src="img/youth.jpg" width="300px">
+			</div>
+		</div>
+		<article class="box2">
+		    <div  class="lyrics-style">
+		    	<p>
+		    		別害怕 我願意用青春來交換<br>
+					別說話 我不會放任淚水留下 你美麗臉龐
+				</p>
+				<p>
+					年少的我們永遠輕狂<br>
+					年少的我們遍體鱗傷<br>
+					年少的我們不曾遺忘<br>
+				</p>
+				<p>
+					我還記得 奮不顧身的自己<br>
+					也還記得 奮不顧身的你<br>
+					如果時間 偷走年少的回憶<br>
+					讓我記得你 身邊的你<br>
+					萬分感激 至少還有你<br>
+				<p>
+					別逞強 你還是會感覺到痛吧<br>
+					別說謊 如果傷口是愛的偽裝 就讓我受傷<br>
+				</p>
+				<p>
+					年少的我們永遠輕狂<br>
+					年少的我們遍體鱗傷<br>
+					年少的我們不曾遺忘<br>
+					最傻的願望<br>
+				</p>
+				<p>
+					我還記得 奮不顧身的自己<br>
+					也還記得 奮不顧身的你<br>
+					如果時間 偷走年少的回憶<br>
+					讓我記得你 身邊的你<br>
+					萬分感激 至少還有你<br>
+				</p>
+				<p>
+					年少的我們愛過恨過 不怕痛<br>
+					堅強的少年哭著笑著 愛作夢<br>
+					用盡一 生 用盡一 生<br>
+				</p>
+				<p>
+					年少的我們永遠輕狂<br>
+					年少的我們遍體鱗傷<br>
+					年少的我們不懂遺忘<br>
+					是最美的悲傷<br>
+				</p>
+				<p>
+					我忘記了 奮不顧身的自己<br>
+					也忘記了 奮不顧身的你<br>
+					如果生命 終究不留下痕跡<br>
+					慢慢被忘記 也不可惜<br>
+					是因為你 是因為相遇<br>
+					萬分感激 曾經是我和你<br>
+				</p>
+				<p>
+					年少的我們永遠輕狂<br>
+					年少的我們永遠輕狂<br>
+				</p>
+		    </div>
+		</article>
+	</article>
+	<footer>
+		<p><a href="#top">▲回到本頁開頭</a></p>
+		<p><small>&copy; Copyright 2025 本網站僅為作業之用，如有侵權敬請告知</small></p>
+	</footer>
+</body>
+</html>
