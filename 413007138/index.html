@@ -71,7 +71,7 @@
 			color: #211E55;
 			background-color: rgba(152,109,178,0.5);
 			/*上 右 下 左*/
-			padding: 1px 5px 1px 5px;
+			padding: 1px 5px;
 			border-radius: 10px;
 			/*取消文字裝飾*/
 			text-decoration: none;
@@ -115,110 +115,120 @@
 		<!-- 導覽列 -->
 		<nav id="nav1">
 			<ul class="flex">
-				<li><a href="index.html">首頁</a></li>
-				<li><a href="timetable.html" target="_blank">我的課表</a></li>
-				<li><a href="exp.html" target="_blank">過往經歷</a></li>
-				<li><a href="lyrics.html" target="_blank">一首歌</a></li>
-				<li><a href="natsume.html" target="_blank">喜歡的動漫</a></li>
-				<li><a href="grid.html" target="_blank">css grid上課範例</a></li>
+				<li><a href="index.html" style="letter-spacing: 0.5em;">首頁</a></li>
+				<li><a href="timetable.html">我的課表</a></li>
+				<li><a href="exp.html">過往經歷</a></li>
+				<li><a href="lyrics.html">一首歌</a></li>
+				<li><a href="natsume.html">喜歡的動漫</a></li>
+				<li><a href="grid.html">css grid上課範例</a></li>
 				<li><small> 本區塊使用nav Tag製作導覽列</small></li>
 			</ul>
 		</nav>
 	</header>
 	<hr>
-	<div class="index-1">
+	<div class="index-container">
 		<div class="intro">
 			<h2>自我介紹</h2>
 			<article class="box2">
-			<div id="intro">
-				<div id="d1"><img src="img/001.jpg" width="300px"></div>
-				<div id="d2">
-					姓名：<b class="intro-content">李孟軒</b><br>
-					系級：<b class="intro-content">淡江大學資圖2A</b><br>
-					學號：<b class="intro-content">413007138</b><br>
-					MBTI：<img src="img/intp.jpg" width="100px"><br>
+				<div id="intro">
+					<div id="d1">
+						<img src="img/001.jpg" width="300px">
+					</div>
+					<div id="d2">
+						姓名：<b class="intro-content">李孟軒</b><br>
+						系級：<b class="intro-content">淡江大學資圖2A</b><br>
+						學號：<b class="intro-content">413007138</b><br>
+						MBTI：<img src="img/intp.jpg" width="100px"><br>
+					</div>
 				</div>
-			</div>
 			</article>
 		</div>
 		<div class="map">
 			<h2>網站地圖&使用功能</h2>
-		<article class="box2">
-		    <ol>
-				<li>固定元素</li>
-					<ul>
-						<li>導覽列(nav)</li>
-						<li>超連結互連(a href)</li>
-						<li>網頁title-logo(ico)</li>
-						<li>大標題(h1)box model設定(在style.css檔)</li>
-						<li>文字樣式(字體、文字大小、位置置中......)</li>
-					</ul>
-				<li>首頁(自我介紹) <a href="index.html">index.html</a></li>
-					<ul>
-						<li>段落(p)</li>
-						<li>表格(table, tr, td)</li>
-						<li>有序串列(ol)</li>
-						<li>
-							無序串列(ul)
-							<dl>
-								<dt>class="nlist" <a href="#nlist">使用區塊</a></dt>
-								<dd>隱藏項目清單符號、行高間距2倍</dd>
-							</dl>
-						</li>
-						<li>大小標題(h1, h2)</li>
-						<li>表格標題(caption)</li>
-						<li>
-							照片、圖片(img)
-							<dl>
-								<dt>img src="img/001.jpg"</dt>
-								<dd>圖片寬度200px</dd>
-								<dt>img src="img/intp.jpg"</dt>
-								<dd>圖片寬度100px</dd>
-							</dl>
-						</li>
-						<li>超連結互連(a href)</li>
-						<li>grid排版</li>
-					</ul>
-				<li>我的課表 <a href="timetable.html" target="_blank">timetable.html</a></li>
-					<ul>
-						<li>表格(table, th, tr, td; thead, tbody, tfoot)</li>
-						<li>
-							表格標題(caption)
-							<dl>
-								<dt>id="#cap2" <a href="timetable.html#cap2" target="_blank">使用區塊</a></dt>
-								<dd>改變標籤樣式-粗體、字型大小/顏色、文字位置</dd>
-							</dl>
-						</li>
-						<li>圖片(img)</li>
-					</ul>
-				<li>過往經歷 <a href="exp.html" target="_blank">exp.html</a></li>
-					<ul>
-						<li>有序串列(ol)</li>
-						<li>無序串列(ul)</li>
-						<li>進度條(progress)</li>
-						<li>grid排版</li>
-					</ul>
-				<li>一首歌 <a href="lyrics.html" target="_blank">lyrics.html</a></li>
-					<ul>
-						<li>自己去看</li>
-					</ul>
-				<li>其他使用的tags(附上W3 school超連結)</li>
-					<ul>
-						<li>
-							<a href="https://www.w3schools.com/tags/tag_article.asp">article Tag-文章内容元素</a>
-							<a href="#content"><small>使用區塊</small></a>
-						</li>
-						<li>
-							<a href="https://www.w3schools.com/tags/tag_nav.asp">nav Tag-導覽連結區塊</a>
-							<a href="#nav1"><small>使用區塊</small></a>
-						</li>
-						<li>
-							<a href="https://www.w3schools.com/TAGs/tag_caption.asp">caption Tag-表格標題</a>
-							<a href="#cap1"><small>使用區塊1</small></a> <a href="timetable.html#cap2" target="_blank"><small>使用區塊2</small></a>
-						</li>					
-					</ul>
-			</ol>
-		</article>
+		</div>		
+		<div class="map-content">
+			<h3>固定元素</h3>
+			<ul>
+				<li>導覽列(nav)</li>
+				<li>超連結互連(a href)</li>
+				<li>網頁title-logo(ico)</li>
+				<li>大標題(h1)box model設定(在style.css)</li>
+				<li>文字樣式(字體、文字大小、位置置中......)</li>
+			</ul>
+		</div>
+		<div class="map-content-2">
+			<h3>首頁(自我介紹)<a href="index.html">index.html</a></h3>
+			<ul>
+				<li>表格(table, tr, td)</li>
+				<li>有序串列(ol)</li>
+				<li>大小標題(h1, h2, h3)</li>
+				<li>表格標題(caption)</li>
+				<li>照片、圖片(img)</li>
+				<li>grid排版</li>
+			</ul>
+		</div>
+		<div class="map-content">
+			<h3>我的課表 <a href="timetable.html" target="_blank">timetable.html</a></h3>
+			<ul>
+				<li>表格(table, th, tr, td; thead, tbody, tfoot)</li>
+				<li>
+					表格標題(caption)
+					<dl>
+						<dt>id="#cap2" <a href="timetable.html#cap2" target="_blank">使用區塊</a></dt>
+						<dd>改變標籤樣式-粗體、字型大小/顏色、文字位置</dd>
+					</dl>
+				</li>
+				<li>圖片(img)</li>
+			</ul>
+		</div>		
+		<div class="map-content-2">
+			<h3>過往經歷 <a href="exp.html" target="_blank">exp.html</a></h3>
+			<ul>
+				<li>有序串列(ol)</li>
+				<li>無序串列(ul)</li>
+				<li>進度條(progress)</li>
+				<li>grid排版</li>
+			</ul>
+		</div>
+		<div class="map-content">
+			<h3>一首歌 <a href="lyrics.html" target="_blank">lyrics.html</a></h3>
+			<ul>
+				<li>大小標題(h1, h2)</li>
+				<li>段落(p)</li>
+				<li>照片、圖片(img)</li>
+			</ul>
+		</div>
+				
+		<div class="map-content-2">
+			<h3>喜歡的動漫 <a href="natsume.html" target="_blank">natsume.html</a></h3>
+			<ul>
+				<li>有序串列(ol)</li>
+				<li>嵌入影片(youtube)</li>
+				<li>grid排版</li>
+			</ul>
+		</div>
+		<div class="map-content">
+			<h3>css grid範例 <a href="grid.html" target="_blank">grid.html</a></h3>
+			<ul>
+				<li>上課grid模板</li>
+			</ul>
+		</div>		
+		<div class="map-content-2">
+			<h3>其他使用的tags(附上W3 school超連結)</h3>
+			<ul>
+				<li>
+					<a href="https://www.w3schools.com/tags/tag_article.asp">article Tag-文章内容元素</a>
+					<a href="#content"><small>使用區塊</small></a>
+				</li>
+				<li>
+					<a href="https://www.w3schools.com/tags/tag_nav.asp">nav Tag-導覽連結區塊</a>
+					<a href="#nav1"><small>使用區塊</small></a>
+				</li>
+				<li>
+					<a href="https://www.w3schools.com/TAGs/tag_caption.asp">caption Tag-表格標題</a>
+					<a href="#cap1"><small>使用區塊1</small></a> <a href="timetable.html#cap2" target="_blank"><small>使用區塊2</small></a>
+				</li>					
+			</ul>
 		</div>
 		<div class="footer-1">
 			<footer>

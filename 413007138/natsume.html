@@ -59,23 +59,6 @@
 		dt{
 			font-style: italic;
 		}
-		/*網站地圖 超連結樣式設置*/
-		a{
-			/*文字顏色*/
-			color: #986DB2;
-			/*裝飾: 類型 樣式 顏色 粗細*/
-			text-decoration: underline dotted #70649A 2px;
-		}
-		a:hover{
-		/* 滑鼠移到文字時的樣式: 文字顏色 背景顏色 内邊距 圓角*/
-			color: #211E55;
-			background-color: rgba(152,109,178,0.5);
-			/*上 右 下 左*/
-			padding: 1px 5px 1px 5px;
-			border-radius: 10px;
-			/*取消文字裝飾*/
-			text-decoration: none;
-		}
 		/* 自我介紹 div區塊 */
 		#intro{
 			display: flex;
@@ -104,31 +87,6 @@
 		body{
 			text-align: center;
 		}
-		.flex2 ol{
-			list-style: none; /*移除項目符號*/
-			padding: 0;
-			margin: 0;
-		}
-		.flex2{
-			display: flex;
-			justify-content: space-evenly;
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			max-width: 1000px;
-			margin-left: auto;
-			margin-right: auto;
-			list-style: none;
-		}
-		
-		.flex2 img{
-			height: 200px;
-			max-height: 100%; /* 寬度以100%呈現，隨著螢幕尺寸縮放*/
-			width: auto; /* 高度隨著螢幕尺寸自動縮放*/
-		}
-		.flex2 a{
-			text-decoration: none; /*移除超連結底線*/
-		}
 
 	</style>
 	<!--Google font-->
@@ -143,12 +101,12 @@
 		<!-- 導覽列 -->
 		<nav id="nav1">
 			<ul class="flex">
-				<li><a href="index.html">首頁</a></li>
-				<li><a href="timetable.html" target="_blank">我的課表</a></li>
-				<li><a href="exp.html" target="_blank">過往經歷</a></li>
-				<li><a href="lyrics.html" target="_blank">一首歌</a></li>
-				<li><a href="natsume.html" target="_blank">喜歡的動漫</a></li>
-				<li><a href="grid.html" target="_blank">css grid上課範例</a></li>
+				<li><a href="index.html">回首頁</a></li>
+				<li><a href="timetable.html">我的課表</a></li>
+				<li><a href="exp.html">過往經歷</a></li>
+				<li><a href="lyrics.html">一首歌</a></li>
+				<li><a href="natsume.html">喜歡的動漫</a></li>
+				<li><a href="grid.html">css grid上課範例</a></li>
 				<li><small> 本區塊使用nav Tag製作導覽列</small></li>
 			</ul>
 		</nav>
@@ -159,6 +117,8 @@
 			<font color="#904840">
 				<h3>心優しき友人たちとの、大切な日々──</h3>
 				<h3>美しく儚き、人と妖の物語。</h3>
+				<h3>和溫柔友人們，珍貴的時光──</h3>
+				<h3>那段美好又短暫、人類與妖怪的邂逅。</h3>
 			</font>
 		</p>
 		<hr>
@@ -193,30 +153,101 @@
 			想いを共有できる友人たちにも助けられながら、<br>
 			大切な日々を守るすべを見つけていこうとする。<br>
 		</p>
-		<h2>動畫</h2>
-		<ol class="flex2">
-			<li><a href="https://www.natsume-anime.jp/introduction/series7" target="_blank">第七季</a><br><a href="https://www.natsume-anime.jp/introduction/series7" target="_blank"><img src="ani/7th.jpg"></a></li>
-			<li><a href="https://www.natsume-anime.jp/introduction/series6" target="_blank">第六季</a><br><a href="https://www.natsume-anime.jp/introduction/series6" target="_blank"><img src="ani/6th.jpg" ></a></li>
-			<li><a href="https://www.natsume-anime.jp/introduction/series5" target="_blank">第五季</a><br><a href="https://www.natsume-anime.jp/introduction/series5" target="_blank"><img src="ani/5th.jpg"></a></li>
-			<li><a href="https://www.natsume-anime.jp/introduction/series4" target="_blank">第四季</a><br><a href="https://www.natsume-anime.jp/introduction/series4" target="_blank"><img src="ani/4th.jpg"></a></li>
-		</ol>
-		<ol class="flex2">
-			<li><a href="https://www.natsume-anime.jp/introduction/series3" target="_blank">第三季</a><br><a href="https://www.natsume-anime.jp/introduction/series3" target="_blank"><img src="ani/3th.jpg"></a></li>
-			<li><a href="https://www.natsume-anime.jp/introduction/series2" target="_blank">第二季</a><br><a href="https://www.natsume-anime.jp/introduction/series2" target="_blank"><img src="ani/2th.jpg" ></a></li>
-			<li><a href="https://www.natsume-anime.jp/introduction/series1" target="_blank">第一季</a><br><a href="https://www.natsume-anime.jp/introduction/series1" target="_blank"><img src="ani/1th.jpg"></a></li>
-		</ol>
 	</div>
-	<div>
-		<h2>電影</h2>
-		<ol class="flex2">
-			<li><a href="https://www.natsume-anime.jp/introduction/movie-utusemi">劇場版 夏目友人帳 ～うつせみに結ぶ～</a><br><a href="https://www.natsume-anime.jp/introduction/movie-utusemi"><img src="ani/m2.jpg"></a></li>
-			<li><a href="https://www.natsume-anime.jp/introduction/ova-isiokoshi">夏目友人帳 石起こしと怪しき来訪者</a><br><a href="https://www.natsume-anime.jp/introduction/ova-isiokoshi"><img src="ani/m1.jpg" ></a></li>
-			<li><a href="https://www.natsume-anime.jp/introduction/ova-ituka">夏目友人帳 いつかゆきのひに</a><br><a href="https://www.natsume-anime.jp/introduction/ova-ituka"><img src="ani/m3.jpg"></a></li>
-		</ol>
+	<div class="natsume-container">
+		<div class="natsume-title">
+			<h2>動畫</h2>
+		</div>
+		<div class="anime-content">
+			<a href="https://www.natsume-anime.jp/introduction/series7" target="_blank">
+				第七季
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/series7" target="_blank">
+				<img src="ani/7th.jpg">
+			</a><br>2024
+		</div>
+		<div class="anime-content_1">
+			<a href="https://www.natsume-anime.jp/introduction/series6" target="_blank">
+				第六季
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/series6" target="_blank">
+				<img src="ani/6th.jpg" >
+			</a><br>2017
+		</div>
+		<div class="anime-content_2">
+			<a href="https://www.natsume-anime.jp/introduction/series5" target="_blank">
+				第五季
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/series5" target="_blank">
+				<img src="ani/5th.jpg">
+			</a><br>2016
+		</div>
+		<div class="anime-content_3">
+			<a href="https://www.natsume-anime.jp/introduction/series4" target="_blank">
+				第四季
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/series4" target="_blank">
+				<img src="ani/4th.jpg">
+			</a><br>2012
+		</div>
+		<div class="anime-content_1">
+			<a href="https://www.natsume-anime.jp/introduction/series3" target="_blank">
+				第三季
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/series3" target="_blank">
+				<img src="ani/3th.jpg">
+			</a><br>2011
+		</div>
+		<div class="anime-content_2">
+			<a href="https://www.natsume-anime.jp/introduction/series2" target="_blank">
+				第二季
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/series2" target="_blank">
+				<img src="ani/2th.jpg" >
+			</a><br>2009
+		</div>
+		<div class="anime-content_3">
+			<a href="https://www.natsume-anime.jp/introduction/series1" target="_blank">
+				第一季
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/series1" target="_blank">
+				<img src="ani/1th.jpg">
+			</a><br>2008
+		</div>
+		<div class="natsume-title">
+			<h2>劇場版</h2>
+		</div>
+		<div class="anime-content_1">
+			<a href="https://www.natsume-anime.jp/introduction/ova-isiokoshi" target="_blank">
+				石起こしと怪しき来訪者
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/ova-isiokoshi" target="_blank">
+				<img src="ani/m1.jpg" >
+			</a><br>2021
+
+		</div>
+		<div class="anime-content_2">
+			<a href="https://www.natsume-anime.jp/introduction/movie-utusemi" target="_blank">
+				うつせみに結ぶ
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/movie-utusemi" target="_blank">
+				<img src="ani/m2.jpg">
+			</a><br>2018
+		</div>
+		<div class="anime-content_3">
+			<a href="https://www.natsume-anime.jp/introduction/ova-ituka" target="_blank">
+				いつかゆきのひに
+			</a><br>
+			<a href="https://www.natsume-anime.jp/introduction/ova-ituka" target="_blank">
+				<img src="ani/m3.jpg">
+			</a><br>2014
+		</div>
+		<div class="footer-natsume">
+			<footer>
+				<p><a href="#top">▲回到本頁開頭</a></p>
+				<p><small>&copy; Copyright 2025 本網站僅為作業之用，如有侵權敬請告知</small></p>
+			</footer>
+		</div>
 	</div>
-	<footer>
-		<p><a href="#top">▲回到本頁開頭</a></p>
-		<p><small>&copy; Copyright 2025 本網站僅為作業之用，如有侵權敬請告知</small></p>
-	</footer>
 </body>
 </html>

@@ -2,7 +2,7 @@
 /* 取消縮排: shift+tab */
 /* grid 範例*/
 .container{
-	width: 100%;
+	width: 80%;
 	height: 100vh;
 
 	display: grid;
@@ -15,6 +15,8 @@
 	padding: 10px;
 
 	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 .container div{
@@ -23,7 +25,6 @@
 
 	padding: 15PX;
 }
-
 .header{
 	grid-column-start: 1;
 	grid-column-end: 4;
@@ -31,7 +32,6 @@
 	border-color: blue;
 	color: blue;
 }
-
 .big-content{
 	grid-column-start: 1;
 	grid-column-end: span 2;
@@ -42,27 +42,25 @@
 	border-color: green;
 	color: green;
 }
-
 .small-content{
 	border-color: orange;
 	color: orange;
 }
-
 .footer{
 	grid-column: 1 / span 3;
 
 	border-color: red;
 	color: red;
 }
-/* 融入grid*/
-.index-1{
+
+/* 首頁設計grid改 */
+.index-container{
 	width: 80%;
 	height: 100vh;
 
 	display: grid;
-
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows:1fr 1fr;
+	grid-template-rows:1fr 1fr 250px 250px 250px 250px;
 
 	grid-gap: 20px;
 
@@ -71,39 +69,151 @@
 	box-sizing: border-box;
 	margin-left: auto;
 	margin-right: auto;
-
 }
-.index-1 div{
-
-
-	padding: 5PX;
+.index-contaer div{
+	padding: 5px;
 }
 .intro{
 	grid-column-start: 1;
 	grid-column-end: 3;
 
-	
 	background-color: #eee;
-
 }
+/* 網站地圖-grid */
 .map{
 	grid-column-start: 1;
 	grid-column-end: 3;
-
-	background-color: #eee;
 }
+.map-content{
+	grid-column-start: 1;
+	grid-column-end: 2;
 
+	color: rosybrown;
+	background-color: white;
+	border-radius: 10px;
+
+	border: solid;
+	border-color: white;
+}
+.map-content h3{
+	text-align: center;
+	color: black;
+}
+.map-content:hover {
+  border: solid;
+  border-color: #BDC0BA;
+}
+.map-content-2{
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	color: rosybrown;
+	background-color: white;
+	border-radius: 10px;
+
+	border: solid;
+	border-color: white;
+}
+.map-content-2 h3{
+	text-align: center;
+	color: black;
+}
+.map-content-2:hover {
+  border: solid;
+  border-color: #BDC0BA;
+}
 .footer-1{
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
+/* 夏目-grid */
+.natsume-container{
+	width: 80%;
+	height: 100vh;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+	padding: 10px;
+
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+.natsume-container a{
+	color: blue;
+	text-decoration: none;
+}
+.natsume-container a:hover {
+	color: orange;
+}
+.natsume-container img{
+	height: 200px;
+	max-height: 100%; /* 寬度以100%呈現，隨著螢幕尺寸縮放*/
+	width: auto;
+
+	margin-top: 10px;
+
+	border-radius: 5px;
+}
+.natsume-container img:hover {
+  transform: scale(1.02);
+}
+.natsume-title{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin: 0;
+	background-color: white;
+}
+.anime-content{
+	grid-column-start: 1;
+	grid-column-end: 4;
+
+	margin: 0;
+	padding: 10px 0px;
+	background-color: white;
+}
+.anime-content_1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+	margin: 0;
+	padding: 10px 0px;
+	background-color: white;
+}
+.anime-content_2{
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	margin: 0;
+	padding: 10px 0px;
+	background-color: white;
+}
+.anime-content_3{
+	grid-column-start: 3;
+	grid-column-end: 4;
+
+	margin: 0;
+	padding: 10px 0px;
+	background-color: white;
+}
+.footer-natsume{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.footer-natsume a:hover {
+	color: black;
+}
+
+
 /* 主要設計 */
 body{
 	font-family: 'Yuji Syuku';
 	background-color: #FCFAF2;
 }
 header{
-text-align:center; 
+	text-align:center; 
 }
 h1{
 	/*文字*/
@@ -198,4 +308,22 @@ nav > ol{
 
 .p1{
 	text-align: center; 
+}
+
+footer a{
+	/*文字顏色*/
+			color: #986DB2;
+			/*裝飾: 類型 樣式 顏色 粗細*/
+			text-decoration: underline dotted #70649A 2px;
+}
+footer a:hover{
+		/* 滑鼠移到文字時的樣式: 文字顏色 背景顏色 内邊距 圓角*/
+			color: #211E55;
+			background-color: rgba(152,109,178,0.5);
+			/*上 右 下 左*/
+			padding: 1px 5px;
+			border-radius: 10px;
+			/*取消文字裝飾*/
+			text-decoration: none;
+
 }
